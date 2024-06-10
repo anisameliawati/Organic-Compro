@@ -8,26 +8,28 @@ import { FaArrowRight } from "react-icons/fa";
 function About() {
   return (
     <>
-      <div className="bg-[#F9F8F8] flex flex-col justify-center items-center p-10">
-        <div className="flex max-w-[80%] p-6 ">
-          <Image src={Photo} className="w-[50%]" alt="" />
+      <div className="bg-[#F9F8F8] flex flex-col justify-center items-center dp:p-10 p-2">
+        <div className="font-[Yellowtail] py-2 text-[30px] text-[#68A47F]">
+          About Us
+        </div>
+        <div className=" grid dp:grid-cols-2 grid-cols-1 max-w-[80%] max-h-auto dp:p-6 p-1 ">
+          <div className="max- h-auto">
+            <Image src={Photo} className="" alt="" />
+          </div>
           <div>
-            <div className="font-[Yellowtail] py-2 text-[30px] text-[#68A47F]">
-              About Us
-            </div>
-            <h1 className="font-[Roboto] font-semibold text-[35px] text-[#274C5B]">
+            <h1 className="font-[Roboto] font-semibold dp:text-[35px] text-[20px] text-[#274C5B]">
               We Believe In Organic
               <br />
               Foods For Strong Health
             </h1>
-            <p className="font-sans text-[#525C60] text-[15px] text-justify">
+            <p className="font-sans text-[#525C60] dp:text-[15px] text-[10px] text-justify">
               Welcome to the world of natural and organic. Here you can discover
               the bounty of nature. We have grown on the principles of health,
               and care. We aim to give our customers a healthy chemical-free
               meal for perfect nutrition.
             </p>
-            <div className="flex items-center mt-4">
-              <div className="mr-4 rounded-xl bg-[#FFFFFF] p-3">
+            <div className="flex items-center dp:mt-4 mt-2">
+              <div className="dp:mr-4 mr-1 rounded-xl bg-[#FFFFFF] dp:p-3 p-2 ">
                 <Image src={food} alt="" />
               </div>
               <div className="font-[Roboto]">
@@ -40,8 +42,8 @@ function About() {
                 </p>
               </div>
             </div>
-            <div className="flex items-center mt-4">
-              <div className="mr-4 rounded-xl bg-[#FFFFFF] p-3">
+            <div className="flex items-center dp:mt-4 mt-2">
+              <div className="dp:mr-4 mr-1 rounded-xl bg-[#FFFFFF] dp:p-3 p-2">
                 <Image src={mail} alt="" />
               </div>
               <div className="font-[Roboto]">

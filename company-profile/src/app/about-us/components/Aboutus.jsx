@@ -11,14 +11,18 @@ function AboutUs() {
       <div>
         {/* background */}
         <div className="flex justify-center items-center">
-          <Image src={bgabout} alt="" />
-          <div className="absolute font-[Roboto] text-[#274C5B] text-[50px] font-semibold">
+          <Image
+            src={bgabout}
+            alt=""
+            className="dp:object-contain object-cover"
+          />
+          <div className="absolute font-[Roboto] text-[#274C5B] dp:text-[50px] text-[30px] font-semibold">
             About Us
           </div>
         </div>
         {/* company overview */}
-        <div className="bg-white p-36">
-          <div className="grid grid-cols-2">
+        <div className="bg-white dp:p-36 p-10">
+          <div className="grid dp:grid-cols-2 grid-cols-1">
             <div className="p-5">
               <Image src={imgabout} alt="" />
             </div>

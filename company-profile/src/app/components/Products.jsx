@@ -15,23 +15,25 @@ function ProductsHome() {
         <div className="grid w-[80%] m-10">
           <div className="flex justify-between mx-10 my-2">
             <div>
-              <h1 className="font-[Yellowtail] text-[#68A47F] text-[30px]">
+              <h1 className="font-[Yellowtail] text-[#68A47F] dp:text-[30px] text-[20px]">
                 Offer Products
               </h1>
-              <h1 className="font-[Roboto] font-semibold text-[30px] text-[#274C5B]">
+              <h1 className="font-[Roboto] font-semibold dp:text-[30px] text-[20px] text-[#274C5B]">
                 We Offer Organic For You
               </h1>
             </div>
-            <div className="flex py-3">
-              <button className="flex bg-[#EFD372] p-4 rounded-xl gap-2 items-center font-[Roboto] font-semibold text-[#274C5B]">
-                View All Products
-                <div className=" bg-[#274C5B] rounded-full p-0.5">
-                  <FaArrowRight className=" text-white text-[80%]" />
-                </div>{" "}
-              </button>
+            <div className=" dp:py-3 py-1">
+              <a href="/shop">
+                <button className="flex bg-[#EFD372] dp:p-4 p-1 rounded-xl gap-2 items-center font-[Roboto] font-semibold text-[#274C5B] dp:text-[15px] text-[9px]">
+                  View All Products
+                  <div className=" bg-[#274C5B] rounded-full p-0.5">
+                    <FaArrowRight className=" text-white text-[80%]" />
+                  </div>
+                </button>
+              </a>
             </div>
           </div>
-          <div className="grid grid-cols-3 gap-2 justify-items-center">
+          <div className="grid dp:grid-cols-3 grid-cols-1 gap-2 justify-items-center">
             {/* product 1 */}
             <div className="flex w-[80%] bg-white rounded-xl p-3">
               <div className="">

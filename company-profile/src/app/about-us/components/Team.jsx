@@ -10,7 +10,7 @@ import photo3 from "../../../../public/secabout/photo3.jpg";
 function Team() {
   return (
     <>
-      <div className="bg-white p-36">
+      <div className="bg-white dp:p-36 p-10">
         <div className="">
           <div className="font-[Yellowtail] text-[#68A47F] font-medium text-[30px] text-center">
             The Team
@@ -25,7 +25,7 @@ function Team() {
             our customers a healthy chemical-free meal for perfect nutrition.
           </div>
           {/* grid */}
-          <div className="grid grid-cols-3 gap-5">
+          <div className="grid dp:grid-cols-3 grid-cols-1 gap-5">
             {/* person 1 */}
             <div className="bg-[#F9F8F8] rounded-2xl pb-9">
               <Image src={photo1} className="rounded-t-xl" alt="" />

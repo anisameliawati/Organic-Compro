@@ -9,8 +9,8 @@ function Footer() {
   return (
     <>
       <div className="bg-[#EFF6F1]">
-        <div className="grid grid-cols-3 gap-10 px-36 py-20 sm:grid-cols-1 sm:gap-6">
-          <div className="text-start">
+        <div className="grid dp:grid-cols-3 dp:gap-10 dp:px-36 px-10 py-20 grid-cols-1 gap-6">
+          <div className="dp:text-start text-center">
             <div className="font-[Roboto] text-[#274C5B] font-semibold text-[20px]">
               Contact Us
             </div>
@@ -33,7 +33,7 @@ function Footer() {
               Jl. Jenderal Sudirman No.Kav. 21
             </div>
           </div>
-          <div>
+          <div className="text-center">
             <Image src={logo} className="m-auto" alt="" />
             <div className="text-center font-sans font-light text-[#274C5B] text-[14px] m-4">
               We are a popular and farming company aspiring to be a leader in
@@ -51,7 +51,7 @@ function Footer() {
               </div>
             </div>
           </div>
-          <div className="text-end">
+          <div className="dp:text-end text-center">
             <div className="font-[Roboto] text-[#274C5B] font-semibold text-[20px]">
               Company
             </div>

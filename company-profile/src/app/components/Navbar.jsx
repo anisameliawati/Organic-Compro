@@ -14,7 +14,7 @@ function NavbarComponents() {
   return (
     <>
       {/* navbar full */}
-      <div className="flex justify-between items-center px-16 py-6">
+      <div className="flex justify-between items-center px-16 py-6 z-20">
         <div>
           <Image src={logo} className="w-40" alt="" />
         </div>
@@ -41,7 +41,7 @@ function NavbarComponents() {
         </div>
 
         {/* navbar logo */}
-        <div className="dp:hidden relative">
+        <div className="dp:hidden relative z-30">
           <button onClick={() => setOpen(!open)}>
             <FaBars />
           </button>

@@ -9,7 +9,7 @@ function Company() {
   return (
     <>
       <div className="flex justify-center items-center bg-[#FFFF] p-10">
-        <div className="flex justify-center items-center max-w-[80%] ">
+        <div className="grid dp:grid-cols-2 grid-cols-1 justify-center items-center max-w-[80%] ">
           <div className="pr-2">
             <div className="py-4 text-[30px] ">
               <h1 className="font-[Yellowtail] text-[#68A47F]">Eco Friendly</h1>
@@ -50,8 +50,8 @@ function Company() {
             </div>
           </div>
 
-          <div className="w-[80%]">
-            <Image src={Photo} className="w-[100%] rounded-lg" alt="" />
+          <div className="w-[100%]">
+            <Image src={Photo} className=" object-cover rounded-lg" alt="" />
           </div>
         </div>
       </div>

@@ -11,7 +11,7 @@ import Image from "next/image";
 function ListProduct() {
   return (
     <>
-      <div className="grid grid-cols-3 gap-x-2 gap-y-0 justify-items-center p-3">
+      <div className="grid dp:grid-cols-3 grid-cols-1 gap-x-2 gap-y-0 justify-items-center p-3">
         {/* product 1 */}
         <div className="flex w-[80%] h-[80%] bg-white rounded-xl p-3 justify-center">
           <div className="">

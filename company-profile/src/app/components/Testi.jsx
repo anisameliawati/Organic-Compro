@@ -13,22 +13,41 @@ function Testimoni() {
       <div className="flex justify-center items-center">
         <Image
           src={testibg}
-          className="bg-cover object-contain min-h-screen"
+          className="bg-cover dp:object-contain object-cover  min-h-screen"
           alt=""
         />
         <div className="absolute text-center">
           <div className="">
-            <div className="mb-4 font-[Yellowtail] text-[#68A47F] text-[50px]">
+            <div className="mb-4 font-[Yellowtail] text-[#68A47F] dp:text-[50px] text-[30px]">
               Testimonial
             </div>
-            <div className=" mb-8 font-[Roboto] text-[#274C5B] text-[40px] font-semibold">
+            <div className=" mb-8 font-[Roboto] text-[#274C5B] dp:text-[40px] text-[15px] font-semibold">
               What Our Customer Saying?
             </div>
             <hr />
           </div>
 
+          {/* testi not dp */}
+          <div className="dp:hidden mb-8 mt-10 text-center">
+            <Image
+              src={testi1}
+              className=" rounded-full w-[80px] m-auto"
+              alt=""
+            />
+            <Image src={rating} className="m-auto" alt="" />
+            <div className="mt-2 text-slate-500 dp:text-base text-xs">
+              The quality of organic produce is extremely high, the service is
+              second to none and the taste of the food
+              <br />
+              takes me back to my childhood when we were growing our own.
+            </div>
+            <div className="mt-2 font-medium dp:text-xl text-base font-[Roboto] text-[#274C5B]">
+              Sarah Taylor
+            </div>
+          </div>
+
           {/* testi 1 */}
-          <div className="mb-8 mt-10 text-center">
+          <div className="mb-8 mt-10 text-center dp:block hidden">
             <Image
               src={testi1}
               className=" rounded-full w-[80px] m-auto"
@@ -48,7 +67,7 @@ function Testimoni() {
 
           {/* testi 2 */}
           <div className="">
-            <div className="mb-8 text-center">
+            <div className="mb-8 text-center dp:block hidden">
               <Image
                 src={testi2}
                 className=" rounded-full w-[80px] m-auto"
@@ -69,7 +88,7 @@ function Testimoni() {
 
           {/* testi 3 */}
           <div className="">
-            <div className="mb-8 text-center">
+            <div className="mb-8 text-center dp:block hidden">
               <Image
                 src={testi3}
                 className=" rounded-full w-[80px] m-auto"

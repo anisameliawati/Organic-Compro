@@ -16,18 +16,22 @@ function Teams() {
     <>
       <div>
         <div className="flex justify-center items-center">
-          <Image src={bgteams} alt="" />
-          <div className="absolute font-[Roboto] text-[#274C5B] text-[50px] font-semibold">
+          <Image
+            src={bgteams}
+            alt=""
+            className="dp:object-contain object-cover"
+          />
+          <div className="absolute font-[Roboto] text-[#274C5B] dp:text-[50px] text-[30px] font-semibold">
             Our Team
           </div>
         </div>
 
-        <div className="bg-white p-20">
+        <div className="bg-white dp:p-20 p-10">
           <div className="">
             <div className="font-[Yellowtail] text-[#68A47F] font-medium text-[30px] text-center">
               The Team
             </div>
-            <div className="font-[Roboto] text-[#274C5B] font-semibold text-[40px] text-center">
+            <div className="font-[Roboto] text-[#274C5B] font-semibold dp:text-[40px] text-[25px] text-center">
               Our Organic Experts
             </div>
             <div className="font-sans text-[14px] text-slate-600 mb-8 mt-3 text-center">
@@ -37,7 +41,7 @@ function Teams() {
               our customers a healthy chemical-free meal for perfect nutrition.
             </div>
             {/* grid */}
-            <div className="grid grid-cols-3 gap-5">
+            <div className="grid dp:grid-cols-3 grid-cols-1 gap-5">
               {/* person 1 */}
               <div className="bg-[#F9F8F8] rounded-2xl pb-9">
                 <Image src={photo1} className="rounded-t-xl" alt="" />
